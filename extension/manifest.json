@@ -1,0 +1,18 @@
+{
+	"name": "Unity Documentation Title Fixer",
+	"version": "0.0.0",
+	"manifest_version": 2,
+	"description": "Makes Unity documentation script reference tab titles be useful.",
+	"icons": {
+		"246": "unity-logo.png"
+	},
+	"minimum_chrome_version": "27",
+	"offline_enabled": false,
+	"content_scripts": [
+    {
+      "matches": ["http://docs.unity3d.com/ScriptReference/*"],
+      "js": ["jquery-2.1.1.min.js", "title-fixer.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
