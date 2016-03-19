@@ -10,7 +10,7 @@
 	"offline_enabled": false,
 	"content_scripts": [
     {
-      "matches": ["http://docs.unity3d.com/ScriptReference/*"],
+      "matches": ["http://docs.unity3d.com/*ScriptReference/*"],
       "js": ["jquery-2.1.1.min.js", "title-fixer.js"],
       "run_at": "document_start"
     }
